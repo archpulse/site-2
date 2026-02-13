@@ -14,10 +14,10 @@ body {
     max-width: 1400px;
     width: 100%;
     margin: 40px auto;
-    border: 2px solid white;
+    border: 5px solid white;
     padding: 30px;
     border-radius: 20px;
-    overflow: hidden; /* ВОТ ЭТО ВАЖНО */
+    overflow: hidden; 
 }
 
 
