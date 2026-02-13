@@ -12,10 +12,12 @@ body {
 
 /* Контейнер */
 .wrapper {
-    width: 1400px; /* ВАЖЛИВО: достатня ширина */
+    max-width: 1400px;
+    width: 100%;
     margin: 40px auto;
     border: 2px solid white;
     padding: 30px;
+    border-radius: 12px;
 }
 
 /* Навбар */
@@ -34,6 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .nav-links {
@@ -55,7 +58,7 @@ body {
     color: red;
 }
 
-/* ГАЛЕРЕЯ */
+/* Галерея */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -64,16 +67,23 @@ body {
 }
 
 .gallery img {
-    flex: 0 0 31%;   /* ось головний момент */
-    border: 2px solid white;
+    flex: 0 0 31%;
     height: 220px;
     object-fit: cover;
+    border: 2px solid white;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Футер */
 .footer {
     border-top: 1px solid white;
-    padding-top: 20px;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
