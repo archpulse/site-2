@@ -61,14 +61,15 @@ body {
 
 /* Галерея */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
     gap: 30px;
     margin: 40px 0;
 }
 
 .gallery img {
-    flex: 0 0 31%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
     object-fit: cover;
     border: 2px solid white;
@@ -79,6 +80,7 @@ body {
 .gallery img:hover {
     transform: scale(1.05);
 }
+
 
 /* Футер */
 .footer {
